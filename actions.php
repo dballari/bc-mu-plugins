@@ -21,7 +21,7 @@ add_action( 'admin_menu', 'admins_remove_menus', 999 );
  * SiteGround PDF: La seguridad Importa
  */
 function no_wordpress_login_errors() {
-    return 'Not able to log in. Sorry!';
+    return 'ERROR: not able to log in.';
 }
 
 add_filter( 'login_errors', 'no_wordpress_login_errors');
