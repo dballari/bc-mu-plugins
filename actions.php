@@ -21,10 +21,10 @@ add_action( 'admin_menu', 'admins_remove_menus', 999 );
  * SiteGround PDF: La seguridad Importa
  */
 function no_wordpress_login_errors() {
-    return 'ERROR: not able to log in.';
+    return 'ERROR: not able to login.';
 }
 
-add_filter( 'login_errors', 'no_wordpress_login_errors');
+add_filter( 'login_errors', 'no_wordpress_login_errors', 999);
 
 /**
  * Remove some top level menu items added by plugins
