@@ -34,4 +34,4 @@ function admin_remove_top_menu() {
         remove_menu_page( 'admin.php?page=loginizer' );
     }
 }
-add_action( 'admin_menu', 'admin_remove_top_menu' );
+add_action( 'admin_menu', 'admin_remove_top_menu', 999 );
