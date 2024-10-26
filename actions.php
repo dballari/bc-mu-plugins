@@ -2,7 +2,7 @@
 /*
 Plugin Name: BC Mu-Plugin
 Description: Must use plugin for the Ballarin Consulting site.
-Version: 1.0.1
+Version: 1.0.2
 Author: David Ballarin Prunera
 */
 
