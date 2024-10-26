@@ -25,3 +25,13 @@ function no_wordpress_login_errors() {
 }
 
 add_filter( 'login_errors', 'no_wordpress_login_errors');
+
+/**
+ * Remove some top level menu items added by plugins
+ */
+function admin_remove_top_menu() {
+    if( !is_super_admin() ) {
+        remove_menu_page( 'admin.php?page=loginizer' );
+    }
+}
+add_action( 'admin_menu', 'admin_remove_top_menu' );
