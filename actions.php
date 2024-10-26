@@ -2,7 +2,7 @@
 /*
 Plugin Name: BC Mu-Plugin
 Description: Must use plugin for the Ballarin Consulting site.
-Version: 1.0.2
+Version: 1.0.3
 Author: David Ballarin Prunera
 */
 
@@ -31,7 +31,9 @@ add_filter( 'login_errors', 'no_wordpress_login_errors', 999);
  */
 function admin_remove_top_menu() {
     if( !is_super_admin() ) {
-        remove_menu_page( 'admin.php?page=loginizer' );
+        remove_menu_page( 'loginizer' );    
+        remove_menu_page( 'wp-mail-smtp' );
     }
+    
 }
 add_action( 'admin_menu', 'admin_remove_top_menu', 999 );
